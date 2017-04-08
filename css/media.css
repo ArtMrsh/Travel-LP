@@ -1,0 +1,105 @@
+@media screen and (max-width: 837px) {
+   .menu {
+      display: block;
+   }
+   .navigation {
+      display: block;
+      width: 100%;
+      max-height: 0;
+      overflow: hidden;
+      transition: .5s;
+      position: absolute;
+   }
+   .show_navigation {
+      max-height: 22em;
+   }
+   .navigation li {
+      border-bottom: 1px solid #2493a9;
+      padding: 0;
+   }
+   .navigation li a {
+      display: block;
+      width: 100%;
+      height: 100%;
+      padding: 15px 0;
+      background-color: #fff;
+   }
+   .navigation li a:hover {
+      border-bottom: 2px solid transparent;
+      background-color: rgba(36,147,169,.9);
+      color: #fff;
+   }
+}
+@media screen and (max-width: 768px) {
+   .services {
+      display: block;
+      padding-left: 10px;
+      padding-right: 10px;
+   }
+   .services__left {
+      margin-right: 0;
+      margin-left: 15px;
+   }
+   .services__right__item, .services__left__item{
+      padding-top: 20px;
+      padding-bottom: 20px;
+   }
+   .services__left__item-top, .services__right__item-top {
+      margin-top: 15px;
+   }
+   .services__left__item-top, .services__left__item-bottom {
+      text-align: left;
+      padding-right: 0;
+      padding-left: 100px;
+      background-position: 0 center;
+   }
+   .services__left__item-top h3, .services__left__item-bottom h3 {
+      text-align: left;
+   }
+   .gallery {
+      margin-top: 70px;
+   }
+   .gallery__content {
+      display: inline-block;
+      margin: 0 auto;
+      margin-top: 14px;
+   }
+   .gallery__item__img, .gallery__item__about {
+      max-width: 200px;
+      max-height: 200px;
+   }
+   .gallery__item {
+      display: -webkit-flex;
+      display: -ms-flex;
+      display: flex;
+   }
+}
+@media screen and (max-width: 480px) {
+   .description {
+      margin-top: 300px;
+   }
+   .header__content h1 {
+      font-size: 70px;
+   }
+   .gallery__item {
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+   }
+   .gallery__item__about-order-fix {
+      order: 1;
+   }
+   .gallery__item__img, .gallery__item__about {
+      max-width: 220px;
+      max-height: 220px;
+   }
+}
+@media screen and (max-width: 350px) {
+   .header__content h1 {
+      font-size: 50px;
+   }
+   .gallery__item__img, .gallery__item__about {
+      max-width: 170px;
+      max-height: 170px;
+   }
+}
