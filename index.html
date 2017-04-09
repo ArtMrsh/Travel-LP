@@ -12,35 +12,35 @@
 <body>
    <div class="wrapper">
 
-      <header>
+      <header id="header">
          <div class="menu-wrap">
                <nav>
                   <div class="menu">
                      <div class="hamburger"></div>
                   </div>
                   <ul class="navigation">
-                     <li><a href="#">Home</a></li>
-                     <li><a href="#">Tour</a></li>
-                     <li><a href="#">Event</a></li>
-                     <li><a href="#">Gallery</a></li>
-                     <li><a href="#">Contact us</a></li>
+                     <li><a class="menu_link" href="#" onclick="smoothScroll('home'); return false;">Home</a></li>
+                     <li><a class="menu_link" href="#" onclick="smoothScroll('tour'); return false;">Tour</a></li>
+                     <li><a class="menu_link" href="#" onclick="smoothScroll('event'); return false;">Event</a></li>
+                     <li><a class="menu_link" href="#" onclick="smoothScroll('gallery'); return false;">Gallery</a></li>
+                     <li><a class="menu_link" href="#" onclick="smoothScroll('contacts'); return false;">Contact us</a></li>
                   </ul>
                </nav>
          </div>
 
-         <div class="header__content">
+         <div class="header__content" id="home">
             <h1>Travel</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             <a href="#">Read more</a>
          </div>
       </header>
 
-      <section class="description">
+      <section class="description" id="tour">
          <div class="desription__title">
             <h3>About travel</h3>
             <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.</p>
          </div>
-         <div class="services">
+         <div class="services" id="event">
             <div class="services__item services__left">
                <div class="services__left__item services__left__item-top">
                   <h3>Lorem ipsum dolor</h3><br>
@@ -65,7 +65,7 @@
       </section>
 
 
-      <section class="gallery">
+      <section class="gallery" id="gallery">
          <div class="gallery_title">
             <h3>The mountains</h3>
          </div>
@@ -106,18 +106,38 @@
          </div>
       </section>
 
-      <section class="contacts">
+      <section class="contacts" id="contacts">
          <div class="form">
             <form action="mail.php" method="POST" id="contacts__form">
-               <input type="text" name="name" placeholder="Name" required>
+               <input type="text" name="nameF" placeholder="Name" required>
                <input type="email" name="email" placeholder="E-mail" required>
                <input type="text" name="subject" placeholder="Subject" required>
-               <textarea id="textarea" type="text" name="message" placeholder="Message"></textarea>
+               <textarea id="textarea" type="text" name="message" placeholder="Message" rows="7"></textarea>
                <input type="submit" name="submit" value="Send">
             </form>
          </div>
-         <div class="advantages"></div>
+         <div class="advantages">
+            <div class="advantages__title">
+               <h2>Why Choose Us?</h2>
+            </div>
+            <div class="advantages__content">
+               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br/>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <div class="contacts__inner">
+               <div class="adress">Adress: prospect svobody 1</div>
+               <div class="phone">Phone: +380634516371</div>
+               <div class="mail">Mail: artyr806@gmail.com</div>
+            </div>
+            <div class="socials">
+               <div class="fb"><a href="#"></a></div>
+               <div class="twitter"><a href="#"></a></div>
+               <div class="insta"><a href="#"></a></div>
+               <div class="google"><a href="#"></a></div>
+               <div class="in"><a href="#"></a></div>
+            </div>
+         </div>
       </section>
+      <a href="#" class="to-top-btn" onclick="smoothScroll('header'); return false;"></a>
    </div>
 <script src="js/script.js"></script>
 </body>

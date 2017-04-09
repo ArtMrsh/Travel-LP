@@ -29,6 +29,26 @@
       background-color: rgba(36,147,169,.9);
       color: #fff;
    }
+   .contacts {
+      margin-top: 40px;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+   }
+   .form  {
+      margin: 0 auto;
+      text-align: center;
+      order: 1;
+      margin-top: 20px;
+   }
+   .advantages {
+      margin: 0 auto;
+      margin-top: 20px;
+      order: 0;
+   }
+   .advantages__content p {
+      text-align: center;
+   }
 }
 @media screen and (max-width: 768px) {
    .services {
@@ -92,6 +112,9 @@
    .gallery__item__img, .gallery__item__about {
       max-width: 220px;
       max-height: 220px;
+   }
+   .form {
+      width: 300px;
    }
 }
 @media screen and (max-width: 350px) {
